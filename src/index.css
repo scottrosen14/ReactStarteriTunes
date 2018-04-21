@@ -3,6 +3,9 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+#container {
+  margin: 2%;
+}
 .searchBtn {
   padding: 10px;
   border: white;
@@ -13,7 +16,17 @@ body {
 table {
   margin-top: 3%;
   width: 100%;
+  border-collapse: collapse;
+}
+table tr {
+  padding: 5px 0px;
+  border-bottom: 1px solid #ccc;
+}
+table tr th {
+  text-align: left;
+  font-size: 20px;
+  padding-bottom: 5px;
 }
 table tr td {
-  border: 1px solid #aaa;
+  padding: 0px;
 }

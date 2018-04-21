@@ -26,12 +26,13 @@ class App extends React.Component {
       data: []
     };
   }
+
   fetchAlbums = () => {
     axios.get('https://itunes.apple.com/search?term=${ARTIST_NAME}')
       .then(function (res) {
-        console.log('data', res.data);
+        // console.log('data', res.data);
         this.setState({data: res.data.results});
-        console.log('state', this.state);
+        // console.log('state', this.state);
       }.bind(this))
       .catch(function (err) {
         console.log(err);
@@ -40,7 +41,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="container">
         <Search name='Search Albums' fetchAlbums={this.fetchAlbums} />
         <AlbumsList data={this.state.data}/>
       </div>
