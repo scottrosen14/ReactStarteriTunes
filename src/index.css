@@ -3,3 +3,17 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+.searchBtn {
+  padding: 10px;
+  border: white;
+  border-radius: 10px;
+  background: orange;
+  font-size: 16px;
+}
+table {
+  margin-top: 3%;
+  width: 100%;
+}
+table tr td {
+  border: 1px solid #aaa;
+}
